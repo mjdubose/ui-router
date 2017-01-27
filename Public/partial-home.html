@@ -1,0 +1,12 @@
+<div class = 'jumbotron text-center'>
+    <h1> The home page</h1>
+    <p> this page demonstrates <span class = 'text-danger'>nested </span> views. </p>
+
+    <a ui-sref=".list" class ="btn btn-primary">List</a>
+    <a ui-sref=".paragraph" class = "btn btn-danger"> Paragraph </a>
+    <a ui-sref="party">Go to Party</a>
+    <a ui-sref="partyDetail({partyID: 5, partyLocation: 'Las Vegas' })">See The Party</a>
+    </div>
+    
+    <div ui-view> </div>
+     
