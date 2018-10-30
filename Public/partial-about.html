@@ -5,6 +5,19 @@
     <p>This page demonstrates <span class="text-danger">multiple</span> and <span class="text-danger">named</span> views.</p>
 </div>
 
+<div style="    margin: 0; padding: 0; background: #E9967A; font-family: Helvetica, Arial, sans-serif;" >
+
+    <input type="text" ng-model="textToBeDisplayed">
+    <div style=" width: 200px; height: 40px; line-height: 40px; position: relative; top: calc(50% - 20px); margin: 8px ">
+            <span overflow-marquee
+                  overflow-marquee-speed=1
+                  overflow-marquee-pause="foo"
+                  ng-click="foo = !foo"
+                  ng-init="foo = false">{{textToBeDisplayed}} </span>
+    </div>
+
+</div>
+
 <div class="row">
 
     <!-- COLUMN ONE NAMED VIEW -->

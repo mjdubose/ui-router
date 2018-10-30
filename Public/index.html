@@ -6,13 +6,30 @@
 
     <!-- CSS (load bootstrap) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./lib/marquee.css">
     <style>
         .navbar { border-radius:0; }
     </style>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            if (jQuery) {
+                // jQuery is loaded
+                alert("Yeah!");
+            } else {
+                // jQuery is not loaded
+                alert("Doesn't Work");
+            }
+        });
+    </script>
 
     <!-- JS (load angular, ui-router, and our custom js file) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="./lib/overflow-marquee.js"></script>
     <script src="./lib/app.js"></script>
 </head>
 
