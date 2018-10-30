@@ -1,0 +1,15 @@
+marquee-overflow {
+    overflow: hidden;
+    white-space: nowrap;
+    display:inline-block;
+    width:200px;
+}
+
+marquee-overflow span.marquee{
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee{
+    100% {transform: translateX(-100%)}
+}

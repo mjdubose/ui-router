@@ -1,6 +1,6 @@
 //app.js
 
-var routerApp = angular.module('routerApp', ['ui.router','overflow-marquee']);
+var routerApp = angular.module('routerApp', ['ui.router','overflow-marquee','marquee-overflow']);
 
 routerApp.config(function ($stateProvider, $urlRouterProvider) {
 
@@ -30,6 +30,7 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
                 '': {templateUrl: 'partial-about.html',
                     controller: (function ($scope, $stateParams) {
                         $scope.textToBeDisplayed = 'HERE IS THE DEFAULT  TEXT that should be far to long for the thing to render';
+                        $scope.textTwo = 'HERE IS THE DEFAULT  TEXT that should be far to long for the thing to render';
                     })
                 },
                 //the child views will be defined here (absolutely named)
